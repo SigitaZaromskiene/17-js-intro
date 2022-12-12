@@ -4,6 +4,10 @@
   "description": "JS-intro",
   "main": "index.js",
   "scripts": {
+    "object": "nodemon ./js/07-object.js",
+    "typeof": "nodemon ./js/06-tyepeof.js",
+    "array": "nodemon ./js/05-array.js",
+    "boolen": "nodemon ./js/04-boolen.js",
     "strings": "nodemon ./js/03-strings.js",
     "numbers": "nodemon ./js/02-numbers.js",
     "labas": "nodemon ./js/01-labas.js",
