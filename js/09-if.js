@@ -99,3 +99,126 @@
 // }
 
 // console.log("aaaaa" / 5);
+// -------N/D------------
+
+const a = 15;
+const b = 5;
+if (a > b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (a < b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (a === b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (a !== b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (a >= b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (a <= b) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+const sports = ["basketball", "football", "golf", "hokey", "jogging"];
+console.log(sports.length);
+
+const animals = ["dogs", "monkeys", "lions", "cats"];
+console.log(animals.length);
+
+if (sports.length > animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (sports.length < animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (sports.length === animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (sports.length !== animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (sports.length >= animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (sports.length <= animals.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+const jscript = "Javascript is the best programming language";
+const php = "PHP is the best programming language";
+
+console.log(jscript.length);
+console.log(php.length);
+
+if (jscript.length > php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (jscript.length < php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (jscript.length === php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (jscript.length !== php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (jscript.length >= php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
+
+if (jscript.length >= php.length) {
+  console.log("Pomidoras");
+} else {
+  console.log("Bandykite dar karta");
+}
