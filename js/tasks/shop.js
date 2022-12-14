@@ -50,6 +50,7 @@ function shop() {
   console.log("----------------------");
 
   const sign = ")";
+  const dot = ".";
   let sum = 0;
 
   for (let i = 0; i < prekes.length; i++) {
@@ -59,16 +60,10 @@ function shop() {
       )} ${valiuta} and amount left is: ${prekes[i].inStock}`
     );
 
-    const amount = (sum += prekes[i].price * prekes[i].inStock++);
+    sum += prekes[i].price * prekes[i].inStock++;
   }
   console.log("----------------------");
-  console.log(`Total amount: ${sum}`);
-
-  //
-  //   const total =
-  //     prekes[0].price * prekes[0].inStock +
-  //     prekes[1].price * prekes[1].inStock +
-  //     prekes[2].price * prekes[2].inStock;
+  console.log(`Total amount: ${sum.toFixed(2)} ${valiuta}${dot}`);
 }
 shop(prekes, valiuta);
 

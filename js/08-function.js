@@ -103,29 +103,37 @@
 // console.log(didziausiasSkaiciusSarase([]));
 
 function isrinktiRaides(text, number) {
+  for (let i = 0; i < text.length; i++) {
+    text.split("");
+    if (text[i] % 2 === 0) {
+      console.log(text[i]);
+    } else if (i % 1 === 0) {
+      console.log(text[i]);
+    }
+  }
+
   if (typeof text === "string") {
-    console.log(text);
+    return;
   } else {
     console.log("Pirmasis kintamasis yra netinkamo tipo.");
   }
   if (text !== " " || text.length > 100) {
-    console.log(text);
+    return;
   } else {
     console.log("Pirmojo kintamojo reikšmė yra netinkamo dydžio");
   }
   if (typeof number === "number") {
-    console.log(number);
+    return;
   } else {
     console.log("Antrasis kintamasis yra netinkamo tipo");
   }
-
   if (number > 0) {
-    console.log(number);
+    return;
   } else {
     console.log("Antrasis kintamasis turi būti didesnis už nulį");
   }
   if (number > text.length) {
-    console.log(number);
+    return;
   } else {
     console.log(
       "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį"
@@ -139,14 +147,12 @@ function isrinktiRaides(text, number) {
   //   }
 }
 
-//   const f = text.split("-");
-//   console.log(f);
 //   const result = f.join().toString();
 //   return result;
 // }
 
 console.log(isrinktiRaides("abcdefg", 2));
-console.log(isrinktiRaides("abcdefghijkl", 3));
-console.log(isrinktiRaides("abc", 0));
-console.log(isrinktiRaides("abc", 4));
-console.log(isrinktiRaides(1561, 2));
+// console.log(isrinktiRaides("abcdefghijkl", 3));
+// console.log(isrinktiRaides("abc", 0));
+// console.log(isrinktiRaides("abc", 4));
+// console.log(isrinktiRaides(1561, 2));
