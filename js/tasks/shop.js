@@ -46,16 +46,30 @@ const prekes = [
 // OPTION 2
 
 function shop() {
+  console.log("Our shop:");
+  console.log("----------------------");
+
   const sign = ")";
+  let sum = 0;
+
   for (let i = 0; i < prekes.length; i++) {
     console.log(
-      `${i + 1}${sign} ${prekes[i].name} kainuoja ${prekes[i].price.toFixed(
+      `${i + 1}${sign} ${prekes[i].name} costs ${prekes[i].price.toFixed(
         2
-      )} ${valiuta} ir turime ju ${prekes[i].inStock} vienetu`
+      )} ${valiuta} and amount left is: ${prekes[i].inStock}`
     );
-  }
-}
 
+    const amount = (sum += prekes[i].price * prekes[i].inStock++);
+  }
+  console.log("----------------------");
+  console.log(`Total amount: ${sum}`);
+
+  //
+  //   const total =
+  //     prekes[0].price * prekes[0].inStock +
+  //     prekes[1].price * prekes[1].inStock +
+  //     prekes[2].price * prekes[2].inStock;
+}
 shop(prekes, valiuta);
 
 // MUSU PARDUOTUVE:
