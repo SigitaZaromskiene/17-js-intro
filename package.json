@@ -4,7 +4,7 @@
   "description": "JS-intro",
   "main": "index.js",
   "scripts": {
-    "shop": "nodemon ./tasks/shop.js",
+    "shop": "nodemon ./js/tasks/shop.js",
     "for": "nodemon ./js/10-for.js",
     "if": "nodemon ./js/09-if.js",
     "function": "nodemon ./js/08-function.js",
