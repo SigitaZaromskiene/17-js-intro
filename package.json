@@ -4,6 +4,7 @@
   "description": "JS-intro",
   "main": "index.js",
   "scripts": {
+    "rangeDivide": "nodemon ./js/tasks/rangeDivide.js",
     "loop": "nodemon ./js/tasks/loop.js",
     "shop": "nodemon ./js/tasks/shop.js",
     "for": "nodemon ./js/10-for.js",
