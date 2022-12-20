@@ -68,26 +68,26 @@
 //   [5, 8],
 // ]);
 
-function open(input) {
-  const newA = [];
+// function open(input) {
+//   const newA = [];
 
-  const arrayAge = input.flat();
-  const arrayFilyter = arrayAge.filter((a, i) => i % 2 === 0);
-  const canPlay = arrayAge.filter((a, i) => i % 2 !== 0);
-  console.log(canPlay);
+//   const arrayAge = input.flat();
+//   const arrayFilyter = arrayAge.filter((a, i) => i % 2 === 0);
+//   const canPlay = arrayAge.filter((a, i) => i % 2 !== 0);
+//   console.log(canPlay);
 
-  const can = canPlay.map((canPlay) => canPlay > 7);
-  console.log(can);
+//   const can = canPlay.map((canPlay) => canPlay > 7);
+//   console.log(can);
 
-  const can1 = arrayFilyter.map((arrayFilyter) => arrayFilyter > 55);
-  console.log(can1);
-  for (let i = 1; i < input.length + 1; i++) {
-    if (can[i] === true && can1[i] === true) {
-      newA.push("Senior");
-    } else {
-      newA.push("Open");
-    }
-  }
-  return newA;
-}
-console.log(open([45, 12], [55, 21], [19, -2], [104, 20]));
+//   const can1 = arrayFilyter.map((arrayFilyter) => arrayFilyter > 55);
+//   console.log(can1);
+//   for (let i = 1; i < input.length + 1; i++) {
+//     if (can[i] === true && can1[i] === true) {
+//       newA.push("Senior");
+//     } else {
+//       newA.push("Open");
+//     }
+//   }
+//   return newA;
+// }
+// console.log(open([45, 12], [55, 21], [19, -2], [104, 20]));

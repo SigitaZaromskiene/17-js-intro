@@ -4,6 +4,8 @@
   "description": "JS-intro",
   "main": "index.js",
   "scripts": {
+    "string-method": "nodemon ./js/12-string-method.js",
+    "ternary": "nodemon ./js/11-ternary.js",
     "rangeDivide": "nodemon ./js/tasks/rangeDivide.js",
     "loop": "nodemon ./js/tasks/loop.js",
     "shop": "nodemon ./js/tasks/shop.js",
