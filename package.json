@@ -4,6 +4,8 @@
   "description": "JS-intro",
   "main": "index.js",
   "scripts": {
+    "rest": "nodemon ./js/15-rest.js",
+    "codewars": "nodemon ./js/tasks/codewars.js",
     "spread": "nodemon ./js/14-spread.js",
     "arrow": "nodemon ./js/13-arrow.js",
     "string-method": "nodemon ./js/12-string-method.js",
