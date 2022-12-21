@@ -38,3 +38,22 @@ console.log(sumForEach);
 let sumForEach1 = 0;
 const forEach1 = marks.forEach((mov) => (sumForEach1 += mov));
 console.log(sumForEach1);
+
+// for in
+
+// per objekta tik
+
+const user = {
+  name: "Petras",
+  age: 58,
+  number: 13,
+  children: 2,
+};
+
+let sum1 = 0;
+for (const key in user) {
+  const value = user[key];
+  if (typeof value === "number") sum1 += value;
+}
+
+console.log(sum1);
