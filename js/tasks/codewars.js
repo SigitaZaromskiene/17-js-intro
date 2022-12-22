@@ -71,3 +71,33 @@
 //   }
 //   return sum1 > sum2;
 // }
+// function sortArray(array) {
+//   const odd = array.filter((a) => a % 2 !== 0);
+//   console.log(odd);
+//   const sorted = odd.sort((a, b) => a - b);
+//   console.log(sorted);
+//   console.log(array.map((x) => (x % 2 ? sorted.shift() : x)));
+//   //   const sort = odd.sort((c, b) => c - b);
+//   //   return array.push(sort);
+// }
+
+// sortArray([5, 3, 2, 8, 1, 4]);
+
+// function highAndLow(numbers) {
+//   const toNum = numbers.split(" ").map((a) => Number(a));
+//   console.log(toNum);
+//   const max = Math.max.apply(Math, toNum);
+//   const min = Math.min.apply(Math, toNum);
+
+//   console.log(max, min);
+// }
+
+// highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((n) => (n < 5 ? 0 : 1))
+    .join("");
+}
+console.log(fakeBin("45385593107843568"));
