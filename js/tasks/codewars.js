@@ -38,3 +38,36 @@
 // }
 
 // console.log(getGrade(70, 70, 100));
+
+// function mad(a, b) {
+//   let sum = 0;
+//   let sumSq = 0;
+
+//   for (const sq of a) {
+//     console.log((sum = +(sq ** 2)));
+//   }
+
+//   for (const cu of b) {
+//     console.log((sumSq = +(cu ** 3)));
+//   }
+
+//   if (sum > sumSq) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// mad([1, 3, 5, 2, 4], [2, 2, 2, 2, 2, 2, 2, 1]);
+
+// function arrayMadness(a, b) {
+//   let sum1 = 0;
+//   let sum2 = 0;
+//   for (let i = 0, { length } = a; i < length; ++i) {
+//     sum1 += a[i] ** 2;
+//   }
+//   for (let i = 0, { length } = b; i < length; ++i) {
+//     sum2 += b[i] ** 3;
+//   }
+//   return sum1 > sum2;
+// }
