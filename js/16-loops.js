@@ -58,26 +58,26 @@
 
 // console.log(sum1);
 
-const age = [2, 4, 6];
-let sumFor = 0;
-for (let i = 0; i < age.length; i++) {
-  console.log((sumFor += age[i]));
-}
-let whle = 0;
-let sumWhile = 0;
-while (whle < age.length) {
-  console.log((sumWhile += age[whle]));
-  whle++;
-}
+// const age = [2, 4, 6];
+// let sumFor = 0;
+// for (let i = 0; i < age.length; i++) {
+//   console.log((sumFor += age[i]));
+// }
+// let whle = 0;
+// let sumWhile = 0;
+// while (whle < age.length) {
+//   console.log((sumWhile += age[whle]));
+//   whle++;
+// }
 
-let sumFor1 = 0;
-for (const mov of age) {
-  return (sumFor1 += mov);
-}
+// let sumFor1 = 0;
+// for (const mov of age) {
+//   return (sumFor1 += mov);
+// }
 
-const ages1 = [2, 4, 6];
+// const ages1 = [2, 4, 6];
 
-ages1.forEach(function (age, i) {
-  console.log(age);
-  console.log(`On ${i + 1} gets ${age}`);
-});
+// ages1.forEach(function (age, i) {
+//   console.log(age);
+//   console.log(`On ${i + 1} gets ${age}`);
+// });
