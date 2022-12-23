@@ -95,9 +95,31 @@
 // highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
 
 function fakeBin(x) {
-  return x
-    .split("")
-    .map((n) => (n < 5 ? 0 : 1))
-    .join("");
+  return x.filter(function (a, i) {
+    return i % 2 === 0;
+  });
 }
-console.log(fakeBin("45385593107843568"));
+
+console.log(fakeBin(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+
+// function ab(x) {
+// const string = String(x).split("");
+// console.log(string);
+
+// const result = string.map((x) => String(x ** 2)
+// console.log(result);
+// for (num of string) {
+//   let double = num ** 2;
+//   console.log(String(double));
+// }
+// console.log(double);
+// }
+//   const numArr = String(x).split("");
+//   const dounbledArr = numArr.map((num) => {
+//     return String(Number(num) ** 2);
+//   });
+//   console.log(dounbledArr);
+//   return Number(dounbledArr.join(""));
+// }
+
+// console.log(ab(9199));
