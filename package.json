@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "JS-intro",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "student": "nodemon ./class/Student.js",
+    "index": "nodemon ./class/index.js",
     "sort": "nodemon ./js/20-sort.js",
     "reduce": "nodemon ./js/19-reduce.js",
     "filter": "nodemon ./js/18-filter.js",
