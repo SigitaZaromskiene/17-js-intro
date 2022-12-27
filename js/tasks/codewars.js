@@ -94,13 +94,13 @@
 
 // highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
 
-function fakeBin(x) {
-  return x.filter(function (a, i) {
-    return i % 2 === 0;
-  });
-}
+// function fakeBin(x) {
+//   return x.filter(function (a, i) {
+//     return i % 2 === 0;
+//   });
+// }
 
-console.log(fakeBin(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+// console.log(fakeBin(["Keep", "Remove", "Keep", "Remove", "Keep"]));
 
 // function ab(x) {
 // const string = String(x).split("");
@@ -122,4 +122,64 @@ console.log(fakeBin(["Keep", "Remove", "Keep", "Remove", "Keep"]));
 //   return Number(dounbledArr.join(""));
 // }
 
-// console.log(ab(9199));
+// console.log(ab(9199)
+
+// function count(number) {
+//   if (number.length > 0) {
+//     let sum = 0;
+//     for (const num of number) {
+//       sum += num;
+//     }
+//     return sum;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// console.log(count([1, 5.2, 4, 0, -1]));
+
+// const arr = [2, 4, 7, 8];
+
+// const arr1 = ["2", "4", "7"];
+
+// console.log(Math.max.apply(Math, arr1));
+
+// function arry(numbers) {
+//   const small = numbers.sort((a, b) => a - b);
+//   const min = small.splice(0, 2);
+//   return min.reduce((acc, a) => acc + a, 0);
+// }
+
+// arry([19, 5, 42, 2, 77]);
+
+// function filter_list(l) {
+//   return l.filter((a) => a !== "string");
+//   console.log(l);
+// }
+// filter_list([1, 2, "a", "b"]);
+
+// function checkForFactor(base, factor) {
+//   const sum = base * factor;
+//   if (sum % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// checkForFactor(10, 2);
+
+function alphabetPosition(text) {
+  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+  const toLow = text.toLowerCase();
+
+  const al = toLow
+    .split("")
+
+    .filter((char) => /[a-zA-Z]/.test(char))
+    .map((x) => alpha.indexOf(x) + 1);
+
+  console.log(al);
+}
+
+alphabetPosition("The sunset sets at twelve o' clock.");
