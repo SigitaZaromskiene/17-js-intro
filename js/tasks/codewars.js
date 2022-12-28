@@ -169,17 +169,61 @@
 
 // checkForFactor(10, 2);
 
-function alphabetPosition(text) {
-  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
-  const toLow = text.toLowerCase();
+// function alphabetPosition(text) {
+//   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+//   const toLow = text.toLowerCase();
 
-  const al = toLow
-    .split("")
+//   const al = toLow
+//     .split("")
 
-    .filter((char) => /[a-zA-Z]/.test(char))
-    .map((x) => alpha.indexOf(x) + 1);
+//     .filter((char) => /[a-zA-Z]/.test(char))
+//     .map((x) => alpha.indexOf(x) + 1);
 
-  console.log(al);
-}
+//   console.log(al);
+// }
 
-alphabetPosition("The sunset sets at twelve o' clock.");
+// alphabetPosition("The sunset sets at twelve o' clock.");
+
+// function getCount(str) {
+//   const stringA = str
+//     .split("")
+//     .filter(
+//       (a) => a === "a" || a === "e" || a === "i" || (a === "o") | (a === "u")
+//     ).length;
+//   console.log(stringA);
+// }
+// getCount("abracadabra");
+
+// function digitize(n) {
+//   const reversed = String(n)
+//     .split("")
+//     .reverse()
+//     .map((a) => Number(a));
+//   console.log(reversed);
+// }
+// digitize(35231);
+
+// function friend(friends) {
+//   const only4 = friends.filter((a) => a.length === 4);
+//   console.log(only4);
+// }
+
+// friend[("Ryan", "Kieran", "Mark")];
+
+// var uniqueInOrder = function (iterable) {
+//   const result = [];
+
+//   const split = iterable
+//     .replace(/\s+|\,|\.|\_|\-|\:|\(|\)|\/|\\/g, "")
+//     .split("");
+//   console.log(split);
+//   for (let i = 0; i < split.length; i++) {
+//     if (split[i] !== split[i + 1]) {
+//       result.push(split[i]);
+//     }
+//   }
+//   return result;
+// };
+
+// uniqueInOrder("AAAABBBCCDAABBB");
+// console.log(uniqueInOrder("1122333"));
