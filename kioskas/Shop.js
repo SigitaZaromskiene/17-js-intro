@@ -2,35 +2,26 @@ class Shop {
   constructor(name, currency) {
     this.name = name;
     this.currency = currency;
-    this.listToBuy = [];
-    this.buyerName = [];
-    this.cart = [{ owner: "Lina", items: [] }];
-    // this.order = [];
-    this.price = price;
+    this.products = [];
   }
 
-  // items() {
-
-  //   onsole.log(`Items for sale at ${this.name}:
-  //   //   ${this.order} ${this.list} - ${this.prices}${this.currency}`);
-  // }
-
-  //   order(orderItem) {
-  //     this.order.push(orderItem);
-  //   }
-
-  // intro() {
-  //   console.log(`Hi, we are ${this.name}\n ${this.list}\n ${this.order}`);
-  // }
+  intro() {
+    const res = `Hi, we are ${this.name}.\nUse .items() method to get list of items to purchase.\nUse .order() method to get your order details`;
+    console.log(res);
+    return res;
+  }
 
   addItem(item, price) {
-    this.listToBuy.push(item);
-    this.prices.push(price);
-    console.log(
-      `${this.name} sells ${item} for ${(price / 100).toFixed(2)} ${
-        this.currency
-      } now!`
-    );
+    this.products.push({
+      name: item,
+      price: price,
+    });
+
+    const result = `${this.name} sells ${item} for ${(price / 100).toFixed(
+      2
+    )} ${this.currency} now!`;
+    console.log(result);
+    return result;
   }
 
   updatePrice(item, updatedPrice) {
@@ -41,19 +32,30 @@ class Shop {
     );
   }
 
-  createCart(buyer) {
-    this.buyerName.push(buyer);
-    console.log(`${buyer} have an open cart at ${this.name}`);
-  }
+  items() {
+    const title = `Items for sale at ${this.name}`;
+    const line = `====================`;
+    let list = "";
+    let i = 0;
 
-  addItemToCart(name, id, count) {
-    this.cart.push(
-      `{ owner: ${name}, items: [{ id: ${id}, count: ${count}}]  }`
-    );
-  }
+    for (const product of this.products) {
+      const formatedName =
+        product.name[0].toUpperCase() + product.name.slice(1);
+      const formatedPr = (product.price / 100).toFixed(2);
+      list += ` ${++i}  ${formatedName} - ${formatedPr} ${this.currency}\n`;
+    }
+    const res = `${title}\n${line}\n${list}\n${line}`;
+    //  ====================
+    // 1) Obuolys - 1.30 EUR;
+    // 2) Morka - 0.65 EUR;
+    // 3) Arbata - 0.95 EUR;
+    //  4) Bulves - 1.35 EUR;
+    // 5) Cepelinai - 1.95 EUR;
+    //  ====================
+    //   `
 
-  order(buyer) {
-    console.log(`${this.cart.find((ow) => ow.owner === buyer)} `);
+    console.log(res);
+    return res;
   }
 }
 
