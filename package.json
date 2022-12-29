@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "kiosk": "nodemon ./kioskas/index.js",
     "student": "nodemon ./class/Student.js",
     "index": "nodemon ./class/index.js",
     "sort": "nodemon ./js/20-sort.js",
