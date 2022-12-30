@@ -3,7 +3,7 @@ class Shop {
     this.name = name;
     this.currency = currency;
     this.products = [];
-    this.cart = [];
+    this.carts = [];
   }
 
   intro() {
@@ -14,6 +14,7 @@ class Shop {
 
   addItem(item, price) {
     this.products.push({
+      id: this.products.length + 1,
       name: item,
       price: price,
     });
@@ -26,6 +27,10 @@ class Shop {
   }
 
   updatePrice(item, updatedPrice) {
+    this.products.forEach((product) => {
+      if (product.name === item) product.price = updatedPrice;
+    });
+
     const res = `${this.name} updated price and sells ${item} for ${(
       updatedPrice / 100
     ).toFixed(2)} ${this.currency} now`;
@@ -59,24 +64,53 @@ class Shop {
     return res;
   }
   createCart(name) {
-    this.cart.push({
+    this.carts.push({
       name: name,
+      items: [],
     });
     console.log(`${name} have an open cart at ${this.name}`);
   }
 
   addItemToCart(name, id, count) {
-    this.cart.push({
-      id: id,
-      count: count,
+    this.carts.forEach((cart) => {
+      if (cart.name === name) {
+        cart.items.push({
+          id: id,
+          count: count,
+        });
+      }
     });
+
     console.log(`${name}, ${id}, ${count}`);
   }
 
   order(name) {
-    console.log(this.cart);
-    console.log(`owner: ${name},
-    items: [${(this.cart.id, this.cart.count)}]`);
+    const cart = this.carts.find((cart) => cart.name === name);
+    console.log(cart);
+  }
+
+  orderPrice(name) {
+    const cart = this.carts.find((cart) => cart.name === name);
+    const items = cart.items;
+    let result = 0;
+
+    try {
+      items.forEach((item) => {
+        const product = this.products.find((product) => product.id === item.id);
+
+        if (!product) return;
+
+        const price = product.price;
+        const count = item.count;
+
+        result += price * count;
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    console.log(`${name} order: ${result} EUR.`);
+    return result;
   }
 }
 

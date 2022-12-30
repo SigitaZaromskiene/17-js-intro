@@ -227,3 +227,19 @@
 
 // uniqueInOrder("AAAABBBCCDAABBB");
 // console.log(uniqueInOrder("1122333"));
+
+function expandedForm(num) {
+  const toStr = String(num);
+  const sliced = toStr.slice(0, 1);
+  const slicedAfter = toStr.slice(1);
+  const slicedAfter1 = toStr.slice(1).length;
+
+  console.log(toStr);
+  console.log(sliced);
+  console.log(slicedAfter1);
+  if (toStr[1] <= 5) {
+    console.log(`${sliced} + ${slicedAfter}`);
+  }
+}
+
+expandedForm(70304);
