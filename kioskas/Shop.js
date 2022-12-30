@@ -3,6 +3,7 @@ class Shop {
     this.name = name;
     this.currency = currency;
     this.products = [];
+    this.cart = [];
   }
 
   intro() {
@@ -25,11 +26,11 @@ class Shop {
   }
 
   updatePrice(item, updatedPrice) {
-    console.log(
-      `${this.name} updated price and sells ${item} for ${(
-        updatedPrice / 100
-      ).toFixed(2)} ${this.currency} now`
-    );
+    const res = `${this.name} updated price and sells ${item} for ${(
+      updatedPrice / 100
+    ).toFixed(2)} ${this.currency} now`;
+    console.log(res);
+    return res;
   }
 
   items() {
@@ -56,6 +57,26 @@ class Shop {
 
     console.log(res);
     return res;
+  }
+  createCart(name) {
+    this.cart.push({
+      name: name,
+    });
+    console.log(`${name} have an open cart at ${this.name}`);
+  }
+
+  addItemToCart(name, id, count) {
+    this.cart.push({
+      id: id,
+      count: count,
+    });
+    console.log(`${name}, ${id}, ${count}`);
+  }
+
+  order(name) {
+    console.log(this.cart);
+    console.log(`owner: ${name},
+    items: [${(this.cart.id, this.cart.count)}]`);
   }
 }
 
