@@ -228,18 +228,55 @@
 // uniqueInOrder("AAAABBBCCDAABBB");
 // console.log(uniqueInOrder("1122333"));
 
-function expandedForm(num) {
-  const toStr = String(num);
-  const sliced = toStr.slice(0, 1);
-  const slicedAfter = toStr.slice(1);
-  const slicedAfter1 = toStr.slice(1).length;
+// function expandedForm(num) {
+//   const toStr = String(num);
+//   const sliced = toStr.slice(0, 1);
+//   const slicedAfter = toStr.slice(1);
+//   const slicedAfter1 = toStr.slice(1).length;
 
-  console.log(toStr);
-  console.log(sliced);
-  console.log(slicedAfter1);
-  if (toStr[1] <= 5) {
-    console.log(`${sliced} + ${slicedAfter}`);
-  }
+//   console.log(toStr);
+//   console.log(sliced);
+//   console.log(slicedAfter1);
+//   if (toStr[1] <= 5) {
+//     console.log(`${sliced} + ${slicedAfter}`);
+//   }
+// }
+
+// expandedForm(70304);
+
+// function doubleChar(str) {
+//   let splited = str.split("");
+//   console.log(splited);
+
+//   return splited.map((a) => a + a).join("");
+// }
+
+// console.log(doubleChar("String"));
+
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//   let age = dadYearsOld - sonYearsOld * 2;
+//   while (age >= 0) {
+//     return age;
+//   }
+//   return +Math.abs(age);
+// }
+
+function twoSort(s) {
+  const sorted = s.sort()[0].split("");
+  const splited = sorted.join("***");
+  console.log(splited);
 }
 
-expandedForm(70304);
+console.log(
+  twoSort([
+    "bitcoin",
+    "take",
+    "over",
+    "the",
+    "world",
+    "maybe",
+    "who",
+    "knows",
+    "perhaps",
+  ])
+);
