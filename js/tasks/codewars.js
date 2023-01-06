@@ -373,3 +373,37 @@
 // console.log(removeSmallest([1, 2, 3, 4, 5]));
 // console.log(removeSmallest([5, 3, 2, 1, 4]));
 // console.log(removeSmallest([2, 2, 1, 2, 1]));
+
+// const rps = (p1, p2) => {
+//   const p = "paper";
+//   const s = "scissors";
+//   const r = "rock";
+//   if (p1 === s && p2 === p) {
+//     return "Player 1 won!";
+//   } else if (p1 === p && p2 === s) {
+//     return "Player 2 won!";
+//   } else if (p1 === s && p2 === r) {
+//     return "Player 2 won!";
+//   } else if (p1 === r && p2 === s) {
+//     return "Player 1 won!";
+//   } else if (p1 === r && p2 === p) {
+//     return "Player 1 won!";
+//   } else if (p1 === p && p2 === r) {
+//     return "Player 2 won!";
+//   } else
+//     (p1 === p && p2 === p) || (p1 === r && p2 === r) || (p1 === s && p2 === s);
+//   return "Draw!";
+// };
+
+// console.log(rps("rock", "scissors"));
+// console.log(rps("paper", "rock"));
+// console.log(rps("rock", "paper"));
+// console.log(rps("scissors", "rock"));
+// console.log(rps("paper", "scissors"));
+// console.log(rps("scissors", "paper"));
+
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
+}
+
+console.log(sortByLength(["Beg", "Life", "I", "To"]));
