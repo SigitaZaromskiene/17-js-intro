@@ -261,22 +261,115 @@
 //   return +Math.abs(age);
 // }
 
-function twoSort(s) {
-  const sorted = s.sort()[0].split("");
-  const splited = sorted.join("***");
-  console.log(splited);
-}
+// function twoSort(s) {
+//   const sorted = s.sort()[0].split("");
+//   const splited = sorted.join("***");
+//   console.log(splited);
+// }
 
-console.log(
-  twoSort([
-    "bitcoin",
-    "take",
-    "over",
-    "the",
-    "world",
-    "maybe",
-    "who",
-    "knows",
-    "perhaps",
-  ])
-);
+// console.log(
+//   twoSort([
+//     "bitcoin",
+//     "take",
+//     "over",
+//     "the",
+//     "world",
+//     "maybe",
+//     "who",
+//     "knows",
+//     "perhaps",
+//   ])
+// );
+
+// const num = [22, 4, 7, 85, 412];
+
+// const max = Math.max(...num);
+// console.log(max);
+
+// const array = [true, true, true, false, true, true, true];
+
+// function countSheeps(arrayOfSheep) {
+//   let sum = 0;
+//   for (let i = 0; i < arrayOfSheep.length; i++) {
+//     if (arrayOfSheep[i] === true) {
+//       sum++;
+//     }
+//   }
+//   return sum;
+// }
+//   for (let sheep of arrayOfSheep) {
+//     let sum = 0;
+//     if (sheep === true) {
+//       console.log();
+//       return (sum += 1);
+//     }
+
+// console.log(countSheeps(array));
+
+// function roundToNext5(n) {
+//   return Math.ceil(n / 5) * 5;
+// }
+
+// console.log(roundToNext5(21));
+
+// function solution(nums) {
+//   if (nums !== null) {
+//     return nums.sort((a, b) => a - b);
+//   } else {
+//     return [];
+//   }
+// }
+
+// console.log(solution([1, 2, 3, 10, 5]));
+// console.log(solution(null));
+
+// function likes(names) {
+//   if (names.length === 0) {
+//     return `no one likes this`;
+//   } else if (names.length === 1) {
+//     return `${names} likes this`;
+//   } else if (names.length > 1 && names.length <= 3) {
+//     const withoutLast = names.slice(0, -1);
+//     const withSpaces = withoutLast.toString().replaceAll(",", ", ");
+//     const lastName = names.slice(-1);
+//     return `${withSpaces} and ${lastName} like this`;
+//   } else if (names.length >= 4) {
+//     const sliceTwo = names.slice(0, 2);
+//     const sliceToString = sliceTwo.toString().replaceAll(",", ", ");
+//     const leftNamesLength = names.slice(2).length;
+//     return `${sliceToString} and ${leftNamesLength} others like this`;
+//   }
+// }
+// console.log(likes(["Alex", "Jacob", "Mark"]));
+// console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
+
+// function getAge(inputString) {
+//   return parseInt(inputString);
+// }
+
+// console.log(getAge("465 years old"));
+
+// function minMax(arr) {
+//   const newArr = [];
+//   const min = Math.min(...arr);
+//   console.log(min);
+//   const max = Math.max(...arr);
+//   console.log(max);
+//   newArr.push(min, max);
+//   return newArr;
+// }
+
+// console.log(minMax([1, 2, 3, 4, 5]));
+
+// function removeSmallest(numbers) {
+//   let indexOfMin = numbers.indexOf(Math.min(...numbers));
+//   console.log(indexOfMin);
+//   console.log([...numbers.slice(0, indexOfMin)]);
+//   console.log([...numbers.slice(indexOfMin + 1)]);
+
+//   //   return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+// }
+
+// console.log(removeSmallest([1, 2, 3, 4, 5]));
+// console.log(removeSmallest([5, 3, 2, 1, 4]));
+// console.log(removeSmallest([2, 2, 1, 2, 1]));
