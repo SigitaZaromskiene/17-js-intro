@@ -402,8 +402,103 @@
 // console.log(rps("paper", "scissors"));
 // console.log(rps("scissors", "paper"));
 
-function sortByLength(array) {
-  return array.sort((a, b) => a.length - b.length);
-}
+// function sortByLength(array) {
+//   return array.sort((a, b) => a.length - b.length);
+// }
 
-console.log(sortByLength(["Beg", "Life", "I", "To"]));
+// console.log(sortByLength(["Beg", "Life", "I", "To"]));
+
+// function singleQuotes(name) {
+//   const newName = (name = "'" + name + "'");
+//   console.log(newName);
+//   return `Name, ${newName} in a single quotes`;
+// }
+
+// console.log(singleQuotes("Jonas"));
+
+// function countBy(x, n) {
+//   const sum = x * n - x;
+//   return sum;
+// }
+
+// console.log(countBy(1, 10));
+
+// function countBy(x, n) {
+//   const z = [];
+//   for (let i = 1; i <= n; i++) {
+//     z.push(x * i);
+//   }
+//   return z;
+// }
+
+// console.log(countBy(1, 10));
+
+// function findSmallestInt(args) {
+//   let smallest = args[0];
+//   for (let i = 0; i < args.length; i++) {
+//     if (args[i] < smallest) smallest = args[i];
+//   }
+//   return smallest;
+// }
+
+// console.log(findSmallestInt([78, 56, 232, 12, 8]));
+
+// function findNeedle(haystack) {
+//   const needle = haystack.filter((word) => word === "needle");
+//   const position = haystack.indexOf("needle");
+//   console.log(needle, position);
+// }
+
+// const haystac = [
+//   "3",
+//   "123124234",
+//   undefined,
+//   "needle",
+//   "world",
+//   "hay",
+//   2,
+//   "3",
+//   true,
+//   false,
+// ];
+
+// console.log(haystac);
+
+// const sequenceSum = (begin, end, step) => {
+//   let sum = 0;
+//   for (var i = begin; i <= end; i += step) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+// console.log(sequenceSum(1, 5, 1));
+// console.log(sequenceSum(1, 5, 3));
+
+// var humanYearsCatYearsDogYears = function (humanYears) {
+//   let catYears = 0;
+//   let dogYears = 0;
+//   if (humanYears === 1) {
+//     console.log(catYears);
+//     return [humanYears, catYears + 15, dogYears + 15];
+//   } else if (humanYears === 2) {
+//     return [humanYears, catYears + 9, dogYears + 9];
+//   } else {
+//     return [humanYears, catYears + 4, dogYears + 4];
+//   }
+// };
+
+// console.log(humanYearsCatYearsDogYears(1));
+// console.log(humanYearsCatYearsDogYears(2));
+
+// function isPangram(string) {
+//   for (let lete of "abcdefghijklmnopqrstuvwxyz") {
+//     if (!string.includes(lete)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+// console.log(isPangram("The own fox jumps."));
+// console.log(isPangram("This is not a pangram."));
