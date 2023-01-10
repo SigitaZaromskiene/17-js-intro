@@ -502,3 +502,35 @@
 // console.log(isPangram("The quick brown fox jumps over the lazy dog."));
 // console.log(isPangram("The own fox jumps."));
 // console.log(isPangram("This is not a pangram."));
+
+// function removeUrlAnchor(url) {
+//   //   const splited = url.split("");
+//   //   if (splited.includes("#")) {
+//   //     const index = splited.indexOf("#");
+//   //     const last = url.slice(index);
+
+//   //     return url.replace(last, "");
+//   //   }
+//   //   return url;
+
+//   return url.split("#")[0];
+// }
+
+// console.log(removeUrlAnchor("www.codewars.com#about"));
+// console.log(removeUrlAnchor("www.codewars.com/katas/"));
+
+// function sumArray(array) {
+//   if (array === null || array.length <= 1) {
+//     return 0;
+//   } else {
+//     const sorted = array.sort((a, b) => a - b);
+//     const result = sorted.slice(1, -1);
+//     const sum = result.reduce((acc, a) => a + acc, 0);
+//     return sum;
+//   }
+// }
+
+// console.log(sumArray([6, 2, 1, 8, 10]));
+// console.log(sumArray([]));
+// console.log(sumArray([6, 2, 1, 8, 10]));
+// console.log(sumArray(null));
