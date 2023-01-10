@@ -534,3 +534,68 @@
 // console.log(sumArray([]));
 // console.log(sumArray([6, 2, 1, 8, 10]));
 // console.log(sumArray(null));
+
+const marks = [2, 5, 8, 9];
+const num = [1, 88, 22, 2];
+const drinks = [2, 2, 3, 5];
+
+const result = 5 > 4 ? "pomidoras" : "bandykite dar karta";
+const result1 = 5 < 4 ? "pomidoras" : "bandykite dar karta";
+const result2 = 5 === 4 ? "pomidoras" : "bandykite dar karta";
+const result3 = 5 !== 4 ? "pomidoras" : "bandykite dar karta";
+const result4 = 5 >= 4 ? "pomidoras" : "bandykite dar karta";
+console.log(result, result1, result2, result3, result4);
+
+// let sum = 0;
+// for (let mark of marks) {
+//   sum += mark;
+// }
+// console.log(sum);
+
+// let su = 0;
+// for (let i = 0; i < num.length; i++) {
+//   su += num[i];
+// }
+// console.log(su);
+
+// console.log(drinks.reduce((acc, drink) => acc + drink, 0));
+// let s = 0;
+// drinks.forEach((a) => {
+//   s += a;
+// });
+// console.log(s);
+
+const fruits = ["apple", "orange", "bannana"];
+const names = ["Sigita", "Gerda", "Diana"];
+const cities = ["Kaunas", "Vilnius", "Siauliai"];
+
+// console.log(fruits.length);
+
+const news = fruits.reverse("").join("," + " ");
+// console.log(news);
+
+const city = cities.join(" ");
+// console.log(city);
+
+const ages1 = [5, 4, 6, 8, 9];
+
+console.log(ages1.length);
+
+// const [age] = ages;
+// console.log(age);
+
+// const summ = age[0] - age[1] + age[2] - age[3] + age[4];
+// console.log(summ);
+
+const songs = [
+  [1, 2, 3, 4, 5],
+  [5, 6, 2, 1, 1],
+  [6, 6, 5, 2, 1, 1],
+];
+
+console.log(songs[0].length);
+const houses = [
+  [4, 4, 5, 3, 2],
+  [2, 2, 3, 3, 5],
+  [1, 1, 1, 2, 3],
+];
