@@ -535,16 +535,16 @@
 // console.log(sumArray([6, 2, 1, 8, 10]));
 // console.log(sumArray(null));
 
-const marks = [2, 5, 8, 9];
-const num = [1, 88, 22, 2];
-const drinks = [2, 2, 3, 5];
+// const marks = [2, 5, 8, 9];
+// const num = [1, 88, 22, 2];
+// const drinks = [2, 2, 3, 5];
 
-const result = 5 > 4 ? "pomidoras" : "bandykite dar karta";
-const result1 = 5 < 4 ? "pomidoras" : "bandykite dar karta";
-const result2 = 5 === 4 ? "pomidoras" : "bandykite dar karta";
-const result3 = 5 !== 4 ? "pomidoras" : "bandykite dar karta";
-const result4 = 5 >= 4 ? "pomidoras" : "bandykite dar karta";
-console.log(result, result1, result2, result3, result4);
+// const result = 5 > 4 ? "pomidoras" : "bandykite dar karta";
+// const result1 = 5 < 4 ? "pomidoras" : "bandykite dar karta";
+// const result2 = 5 === 4 ? "pomidoras" : "bandykite dar karta";
+// const result3 = 5 !== 4 ? "pomidoras" : "bandykite dar karta";
+// const result4 = 5 >= 4 ? "pomidoras" : "bandykite dar karta";
+// console.log(result, result1, result2, result3, result4);
 
 // let sum = 0;
 // for (let mark of marks) {
@@ -566,20 +566,20 @@ console.log(result, result1, result2, result3, result4);
 // console.log(s);
 
 const fruits = ["apple", "orange", "bannana"];
-const names = ["Sigita", "Gerda", "Diana"];
-const cities = ["Kaunas", "Vilnius", "Siauliai"];
+// const names = ["Sigita", "Gerda", "Diana"];
+// const cities = ["Kaunas", "Vilnius", "Siauliai"];
 
-// console.log(fruits.length);
+// // console.log(fruits.length);
 
-const news = fruits.reverse("").join("," + " ");
-// console.log(news);
+// const news = fruits.reverse("").join("," + " ");
+// // console.log(news);
 
-const city = cities.join(" ");
-// console.log(city);
+// const city = cities.join(" ");
+// // console.log(city);
 
-const ages1 = [5, 4, 6, 8, 9];
+// const ages1 = [5, 4, 6, 8, 9];
 
-console.log(ages1.length);
+// console.log(ages1.length);
 
 // const [age] = ages;
 // console.log(age);
@@ -587,15 +587,66 @@ console.log(ages1.length);
 // const summ = age[0] - age[1] + age[2] - age[3] + age[4];
 // console.log(summ);
 
-const songs = [
-  [1, 2, 3, 4, 5],
-  [5, 6, 2, 1, 1],
-  [6, 6, 5, 2, 1, 1],
-];
+// const songs = [
+//   [1, 2, 3, 4, 5],
+//   [5, 6, 2, 1, 1],
+//   [6, 6, 5, 2, 1, 1],
+// ];
 
-console.log(songs[0].length);
-const houses = [
-  [4, 4, 5, 3, 2],
-  [2, 2, 3, 3, 5],
-  [1, 1, 1, 2, 3],
-];
+// console.log(songs[0].length);
+// const houses = [
+//   [4, 4, 5, 3, 2],
+//   [2, 2, 3, 3, 5],
+//   [1, 1, 1, 2, 3],
+// ];
+
+// let sum = 0;
+// for (let i = 574; i < 815; i++) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// const back = function (word) {
+//   let reversed = "";
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     reversed += word[i];
+//   }
+
+//   return reversed;
+// };
+
+// console.log(back("abcdef"));
+
+// const sent = function (word) {
+//   let newW = "";
+//   for (let i = word.length - 1; i >= 0; i--) {
+//     newW += word[i];
+//   }
+//   return newW;
+// };
+
+// console.log(sent("alus"));
+
+// const newSent = function (word) {
+//   let new1 = "";
+//   for (let i = 0; i < word.length; i++) {
+//     new1 = word[i] + new1;
+//   }
+//   return new1;
+// };
+
+// console.log(newSent("alus"));
+
+const inter = function (first, second, inter) {
+  let count = "";
+  for (let i = first; i <= second; i++) {
+    if (i % inter === 0) {
+      count++;
+    }
+  }
+  return count;
+};
+console.log(inter(0, 11, 3));
+console.log(inter(0, 11, 5));
+console.log(inter(0, 11, 7));
