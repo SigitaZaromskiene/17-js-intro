@@ -638,15 +638,120 @@ const fruits = ["apple", "orange", "bannana"];
 
 // console.log(newSent("alus"));
 
-const inter = function (first, second, inter) {
-  let count = "";
-  for (let i = first; i <= second; i++) {
-    if (i % inter === 0) {
-      count++;
-    }
-  }
-  return count;
-};
-console.log(inter(0, 11, 3));
-console.log(inter(0, 11, 5));
-console.log(inter(0, 11, 7));
+// const inter = function (first, second, divider) {
+//   let count = 0;
+//   for (let i = first; i <= second; i++) {
+//     if (i % divider === 0) {
+//       console.log(i);
+//       count = count + i;
+//     }
+//   }
+//   return count;
+// };
+// console.log(inter(0, 11, 3));
+// console.log(inter(0, 11, 5));
+// console.log(inter(0, 11, 7));
+
+// function empty() {
+//   console.log(false);
+// }
+
+// empty();
+
+// function empty(num1, num2) {
+//   const sum = num1 * num2;
+//   console.log(sum);
+//   return sum;
+// }
+
+// empty(1, 2);
+
+// function skaitmenuKiekisSkaiciuje(num) {
+//   if (typeof num !== "number") {
+//     return `Pateikta netinkamo tipo reikšmė.`;
+//   } else {
+//     const sum = String(num).length;
+//     return sum;
+//   }
+// }
+
+// console.log(skaitmenuKiekisSkaiciuje(5));
+// console.log(skaitmenuKiekisSkaiciuje(37060123456));
+// console.log(skaitmenuKiekisSkaiciuje("hh"));
+
+// function didziausiasSkaiciusSarase(num) {
+//   if (!Array.isArray(num)) {
+//     return `Pateikta netinkamo tipo reikšmė.`;
+//   } else if (num.length === 0) {
+//     return `Tuscias`;
+//   } else {
+//     let max = 0;
+//     for (let ma of num) {
+//       max = ma > max ? ma : max;
+//     }
+//     return max;
+//   }
+// }
+// console.log(didziausiasSkaiciusSarase([1]));
+// console.log(didziausiasSkaiciusSarase([]));
+
+// console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18]));
+
+// console.log(didziausiasSkaiciusSarase("pomidor"));
+
+// function isrinktiRaides(text, letter) {
+//   if (typeof text !== "string") {
+//     return `Pirmasis kintamasis yra netinkamo tipo.`;
+//   } else if (text.length >= 100 && text.length === 0) {
+//     return `Pirmojo kintamojo reikšmė yra netinkamo dydžio.`;
+//   } else if (typeof letter !== "number") {
+//     return `Antrasis kintamasis yra netinkamo tipo`;
+//   } else if (letter === 0) {
+//     return `Antrasis kintamasis turi būti didesnis už nulį`;
+//   } else if (letter > text.length) {
+//     return `Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį`;
+//   } else {
+//     const sliced = text.slice(letter);
+//     return sliced;
+//   }
+// }
+
+// console.log(isrinktiRaides("abcdefg", 2));
+// console.log(isrinktiRaides("abc", 4));
+// console.log(isrinktiRaides("abc", 0));
+// console.log(isrinktiRaides(1561, 2));
+
+// function dalyba(num1, num2) {
+//   if (
+//     num1 <= 0 ||
+//     typeof num1 !== "number" ||
+//     !isFinite(num1) ||
+//     num1 % 1 !== 0
+//   ) {
+//     return `num1 is not valid`;
+//   } else if (
+//     num2 <= 0 ||
+//     typeof num2 !== "number" ||
+//     !isFinite(num1) ||
+//     num2 % 1 !== 0
+//   ) {
+//     return `num2 is not valid`;
+//   } else {
+//     return num1 / num2;
+//   }
+// }
+
+// console.log(dalyba(4, 2));
+// console.log(dalyba(40, 10));
+// console.log(dalyba(-4, 2));
+// console.log(dalyba(4, -2));
+// console.log(dalyba(null, 2));
+// console.log(dalyba(4, NaN));
+// console.log(dalyba(NaN, null));
+// console.log(dalyba(NaN, NaN));
+// console.log(dalyba("laba", null));
+// console.log(dalyba(4, true));
+// console.log(dalyba(4.2, null));
+// console.log(dalyba(4, 33.33));
+// console.log(dalyba(0, 33.33));
+// console.log(dalyba(4, 0));
