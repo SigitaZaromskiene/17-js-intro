@@ -755,3 +755,89 @@ const fruits = ["apple", "orange", "bannana"];
 // console.log(dalyba(4, 33.33));
 // console.log(dalyba(0, 33.33));
 // console.log(dalyba(4, 0));
+// /**p yra sutrump */
+
+// const p = 3.14;
+// const pp = p;
+// /**
+//  *
+//  * @param {number} sveikasis sk
+//  * @param {*number} b
+//  * @returns
+//  */
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// const capitals = function (word) {
+//   let newA = [];
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i].toUpperCase() == word[i]) console.log(word[i]);
+//   }
+// };
+
+// console.log(capitals("CodEWaRs"));
+
+// const capitals = function (word) {
+//   let caps = [];
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i].toUpperCase() == word[i]) caps.push(i);
+//   }
+//   return caps;
+// };
+
+// console.log(capitals("CodEWaRs"));
+
+// const arr = (N) => {
+//   let newARR = [];
+//   for (let i = 0; i < N; i++) {
+//     newARR.push(i);
+//   }
+//   return newARR;
+// };
+// /* the numbers 0 to N-1 */
+
+// console.log(arr(5));
+
+// function checkExam(array1, array2) {
+//   let sum = 0;
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array1[i] === array2[i]) {
+//       console.log(array1[i]);
+//       console.log(array2[i]);
+//       sum += 4;
+//     } else if (array1[i] === "" || array2[i] === "") {
+//       sum += 0;
+//     } else if (array1[i] !== array2[i]) {
+//       sum -= 1;
+//     }
+//   }
+//   return sum > 0 ? sum : 0;
+//   //  } else if (array1[i] !== array2[i]) {
+//   //     return (sum -= 1);
+//   //   }
+//   //   console.log(sum);
+//   // }
+// }
+
+// console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));
+// console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b", ""]));
+
+// function shortcut(string) {
+//   return string
+//     .replaceAll("e", "")
+//     .replaceAll("e", "")
+//     .replaceAll("i", "")
+//     .replaceAll("o", "")
+//     .replaceAll("u", "");
+// }
+// //   let letters = ["a", "e", "i", "o", "u"];
+// //   for (let i = 0; i < string.length; i++) {
+// //     if (string[i] === letters[i]) {
+// //       console.log(string.slice(letters));
+// //     }
+// //   }
+// //   return string;
+// // }
+
+// console.log(shortcut("hello"));
