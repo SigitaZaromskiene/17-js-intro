@@ -841,3 +841,101 @@ const fruits = ["apple", "orange", "bannana"];
 // // }
 
 // console.log(shortcut("hello"));
+
+// function persistence(num) {
+//   if (num.toString().length === 1) {
+//     return 0;
+//   } else {
+//     const splited = num.toString();
+//     let sum = 1;
+//     for (let i = 0; i < splited.length; i++) {
+//       console.log(splited[i]);
+//       sum = splited[i] * sum;
+//     }
+//     return sum;
+//   }
+// }
+
+// function persistence(num) {
+//   var times = 0;
+
+//   num = num.toString();
+//   console.log(num);
+
+//   while (num.length > 1) {
+//     num = num
+//       .split("")
+//       .map(Number)
+//       .reduce((a, b) => a * b)
+//       .toString();
+//     console.log(num);
+//     times++;
+//   }
+
+//   return times;
+// }
+// console.log(persistence(39));
+// console.log(persistence(3));
+
+// function smallEnough(a, limit) {
+//   // return a.every((a) => a <= limit);
+
+//   return Math.max(...a) < limit;
+// }
+
+// console.log(smallEnough([66, 101], 200));
+// console.log(smallEnough([3, 0, 3, 4, 7, 4, 0, 7, 6, 5, 3], 4));
+
+// function sumDigits(number) {
+//   const abs = Math.abs(number);
+//   const splited = abs.toString().split("");
+//   const result = splited.map((a) => Number(a)).reduce((acc, a) => acc + a);
+//   return result;
+// }
+
+// console.log(sumDigits(10));
+// console.log(sumDigits(99));
+// console.log(sumDigits(-32));
+
+// function getDivisorsCnt(n) {
+//   let div = 0;
+//   for (let i = 1; i <= n; i++) if (n % i == 0) div++;
+//   return div;
+// }
+
+// console.log(getDivisorsCnt(4));
+
+//
+
+// const multiTable = (number) => {
+//   let table = "";
+
+//   for (let i = 1; i <= 10; i++) {
+//     table += `${i} * ${number} = ${i * number}\n`;
+//   }
+
+//   return table;
+// };
+
+// console.log(multiTable(5));
+
+// function findOdd(arr) {
+//   const find1 = arr.find((item, index) =>
+//     arr.filter((el) => console.log(el == item))
+//   );
+
+//   console.log(find1);
+// }
+
+// console.log(findOdd([1, 0, 1, 0, 0]));
+
+// arr.filter((el) => el == item).length % 2);
+
+// function cockroachSpeed(s) {
+//   const sec = 3600;
+//   console.log(sec);
+//   const cm = s / 100000;
+//   console.log(cm);
+// }
+
+// cockroachSpeed(1.08);
