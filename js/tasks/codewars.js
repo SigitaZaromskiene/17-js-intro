@@ -939,3 +939,177 @@ const fruits = ["apple", "orange", "bannana"];
 // }
 
 // cockroachSpeed(1.08);
+
+// function printerError(s) {
+//   const length = s.length;
+//   const filtered = s.split("");
+//   const filt = filtered.filter(
+//     (a) =>
+//       a === "a" ||
+//       a === "b" ||
+//       a === "c" ||
+//       a === "d" ||
+//       a === "e" ||
+//       a === "f" ||
+//       a === "g" ||
+//       a === "h" ||
+//       a === "i" ||
+//       a === "j" ||
+//       a === "k" ||
+//       a === "l" ||
+//       a === "m"
+//   );
+//   const errorRate = Number(length) - Number(filt.length);
+//   return `${errorRate}/${length}`;
+// }
+
+// function printerError(s) {
+//   // your code
+//   var count = 0;
+//   for (var i = 0; i < s.length; i++) {
+//     if (s[i] > "l") {
+//       count++;
+//       console.log(count);
+//     }
+//   }
+//   return count + "/" + s.length;
+// }
+
+// console.log(printerError("aaaxbbbbyyhwawiwjjlljwwm"));
+
+// function enough(cap, on, wait) {
+//   const howManyInBus = cap - on;
+//   if (howManyInBus >= wait) {
+//     return 0;
+//   } else {
+//     return wait - howManyInBus;
+//   }
+// }
+
+// console.log(enough(100, 60, 50));
+
+// function domainName(url) {
+//   url = url.replace("https://", "");
+//   url = url.replace("http://", "");
+//   url = url.replace("www.", "");
+//   return url.split(".")[0];
+// }
+
+// console.log(domainName("https://www.cnet.com"));
+
+// function descendingOrder(n) {
+//   const splited = n.toString().split("");
+//   console.log(splited);
+
+//   const s = splited
+//     .sort((a, b) => a - b)
+//     .reverse()
+//     .join("");
+
+//   return Number(s);
+// }
+
+// console.log(descendingOrder(1021));
+
+// function replace(s) {
+//   return s.replace(/[aeiou]/gi, "");
+// }
+
+// console.log(replace("!Hi! Hi!"));
+
+// function areYouPlayingBanjo(name) {
+//   const first = name.slice(0, 1);
+//   console.log(first);
+//   if (first === "R" || first === "r") {
+//     return `${name} plays banjo`;
+//   }
+//   return `${name} does not play banjo`;
+// }
+
+// console.log(areYouPlayingBanjo("Adam"));
+
+// function stray(numbers) {
+//   const sorted = numbers.sort();
+//   console.log(sorted);
+
+//   if (numbers[1] !== numbers[0]) {
+//     return numbers[0];
+//   } else {
+//     return numbers.length - 1;
+//   }
+// }
+//   let i = 0;
+
+//   let notEven = numbers.find((el) => el !== i);
+//   const newI = (notEven = i);
+//   console.log(newI);
+//   //   numbers.forEach((element) => {
+//   //     element > i ? element === i : i;
+//   //     console.log(element);
+//   //   });
+
+// function stray1(numbers) {
+//   // numbers = numbers.sort((a, b) => a - b);
+//   //   numbers.sort();
+//   //   console.log(numbers);
+//   //   if (numbers[0] !== numbers[1]) {
+//   //     return numbers[0];
+//   //   } else {
+//   //     return numbers[numbers.length - 1];
+//   //   }
+//   // }
+//   const ats = numbers.filter((a) => a !== numbers[0]);
+//   return ats[0];
+// }
+// console.log(stray1([17, 17, 3, 17, 17, 17, 17]));
+
+// function remove(string) {
+//   if (string.includes("!")) {
+//     return string.slice(0, -1);
+//   } else {
+//     return string;
+//   }
+// }
+
+// console.log(remove("Hi!"));
+// console.log(remove("Hi"));
+
+// function findMultiples(int, limit) {
+//   let result = [];
+
+//   for (let i = int; i <= limit; i +init = int) result.push(i);
+
+//   return result;
+// }
+
+// console.log(findMultiples(5, 25));
+
+// function findUniq(arr) {
+//   arr.sort((a, b) => a - b);
+
+//   if (arr[0] === arr[1]) {
+//     return arr[arr.length - 1];
+//   } else {
+//     return arr[0];
+//   }
+// }
+// // console.log(findUniq([1, 1, 1, 2, 1, 1]));
+// console.log(findUniq([3, 10, 3, 3, 3]));
+
+// console.log(findUniq([3, -10, 3, 3, 3]));
+
+function duplicateEncode(word) {
+  let newArr = "";
+
+  for (let i = 0; i < word.length; i++) {
+    if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
+      newArr += "(";
+    } else newArr += ")";
+  }
+  return newArr;
+}
+console.log(duplicateEncode("recede"));
+
+const sen = "reda valgo";
+const spl = sen.split("");
+console.log(lastIndexOf(spl[0]));
