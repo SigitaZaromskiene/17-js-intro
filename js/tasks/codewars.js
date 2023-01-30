@@ -1098,18 +1098,25 @@ const fruits = ["apple", "orange", "bannana"];
 
 // console.log(findUniq([3, -10, 3, 3, 3]));
 
-function duplicateEncode(word) {
-  let newArr = "";
+// function duplicateEncode(word) {
+//   let newArr = "";
 
-  for (let i = 0; i < word.length; i++) {
-    if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
-      newArr += "(";
-    } else newArr += ")";
-  }
-  return newArr;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
+//       newArr += "(";
+//     } else newArr += ")";
+//   }
+//   return newArr;
+// }
+// console.log(duplicateEncode("recede"));
+
+// const sen = "reda valgo";
+// const spl = sen.split("");
+// console.log(lastIndexOf(spl[0]));
+
+function isIsogram(str) {
+  const splited = str.split("");
+  console.log(splited);
 }
-console.log(duplicateEncode("recede"));
 
-const sen = "reda valgo";
-const spl = sen.split("");
-console.log(lastIndexOf(spl[0]));
+console.log(isIsogram("Dermatoglyphics"));
