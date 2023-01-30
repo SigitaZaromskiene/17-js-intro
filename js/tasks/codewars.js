@@ -1114,9 +1114,241 @@ const fruits = ["apple", "orange", "bannana"];
 // const spl = sen.split("");
 // console.log(lastIndexOf(spl[0]));
 
-function isIsogram(str) {
-  const splited = str.split("");
-  console.log(splited);
+// function isIsogram(str) {
+//   const splited = str.toLowerCase();
+//   const spl = splited.split("");
+//   const sorted = spl.sort();
+//   for (let i = 0; i < sorted.length; i++) {
+//     if (sorted[i] == sorted[i + 1]) return false;
+//   }
+//   return true;
+// }
+
+//   str = str.toLowerCase();
+//   let i, j;
+//   for (i = 0; i < str.length; ++i) {
+//     for (j = i + 1; j < str.length; ++j) {
+//       if (str[i] === str[j]) {
+//         return false;
+//       }
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isIsogram("Dermatoglyphics"));
+// console.log(isIsogram("aba"));
+
+// function duplicateCount(text) {
+//   let splited = text.toLowerCase().split("").sort();
+//   console.log(splited);
+//   let iCount = [];
+//   for (let i = 0; i < splited.length; i++) {
+//     if (splited[i] === splited[i + 1]) iCount.push(splited[i]);
+//   }
+//   return iCount.length;
+// }
+
+// console.log(duplicateCount("aabbcde"));
+
+function sumStr(a, b) {
+  if (a.lenght || b.length === 0) {
+    return 0;
+  }
+  return String(Number(a) + Number(b));
 }
 
-console.log(isIsogram("Dermatoglyphics"));
+// console.log(sumStr("4", "5"));
+
+// function solution(string) {
+//   let splitStr = string.split("");
+//   let newStr = "";
+//   splitStr.forEach((e) => {
+//     if (e === e.toUpperCase()) newStr += " " + e;
+//     else newStr += e;
+//   });
+//   return newStr;
+// }
+
+// console.log(solution("camelCasing")); //success = "camel Casing"
+// console.log(solution("camelCasingTest"));
+
+//
+
+// function disemvowel(str) {
+//   let str1 = str.replace(/A|E|I|O|U|a|e|i|o|u/g, "");
+//   return str1;
+// }
+
+//   console.log(str);
+//   const newStr = str
+//     .replaceAll("i", "")
+//     .replaceAll("e", "")
+//     .replaceAll("o", "")
+//     .replaceAll("u", "")
+//     .replaceAll("e", "");
+//   return newStr;
+// }
+
+//
+
+// function openOrSenior(data) {
+//   let output = [];
+//   for (let i = 0; i < data.length; i++) {
+//     const [age, hand] = data[i];
+//     age >= 55 && hand > 7 ? output.push("Senior") : output.push("Open");
+//   }
+//   return output;
+// }
+
+// console.log(
+//   openOrSenior([
+//     [45, 12],
+//     [55, 21],
+//     [19, -2],
+//     [104, 20],
+//   ])
+// );
+
+// function dutyFree(normPrice, discount, hol) {
+//   const price = (normPrice * discount) / 100;
+//   const till = hol / price;
+//   const rounded = Math.floor(till);
+//   console.log(rounded);
+// }
+
+// console.log(dutyFree(12, 50, 1000));
+
+// function capitalize(s) {
+//   const odd = s
+//     .split("")
+//     .map((l, i) => (i % 2 !== 0 ? l.toUpperCase() : l))
+//     .join("");
+//   const even = s
+//     .split("")
+//     .map((l, i) => (i % 2 === 0 ? l.toUpperCase() : l))
+//     .join("");
+//   return [even, odd];
+// }
+
+// console.log(capitalize("abcdef"));
+
+// function distinct(a) {
+//   const set = new Set(a);
+//   return [...set];
+// }
+
+// console.log(distinct([1, 2, 2, 2]));
+
+// function hello(name) {
+//   const new1 = name.toLowerCase();
+//   const first = new1.slice(0, 1).toUpperCase();
+
+//   name = first + new1.slice(1);
+
+//   return name.length > 1 ? `Hello, ${name}!` : `Hello, World!`;
+// }
+
+// console.log(hello("aLice"));
+
+// function feast(beast, dish) {
+//   if (
+//     beast.slice(0, 1) === dish.slice(0, 1) &&
+//     beast.slice(-1) === dish.slice(-1)
+//   ) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(feast("great blue heron", "garlic naan"));
+
+// const isAnagram = function (test, original) {
+//   const test1 = test.toLowerCase().split("").sort();
+//   const test2 = original.toLowerCase().split("").sort();
+//   return test1.join("") === test2.join("");
+
+//   // return test1 === test2 ? true : false;
+// };
+
+// console.log(isAnagram("foefet", "toffee"));
+// console.log(isAnagram("Buckethead", "DeathCubeK"));
+// console.log(isAnagram("dumble", "bumble"));
+
+// function solve(s) {
+//   const upper = s.split("").filter((a) => a === a.toUpperCase());
+//   const lower = s.split("").filter((a) => a === a.toLowerCase());
+//   if (upper.length > lower.length) {
+//     return s.toUpperCase();
+//   } else {
+//     return s.toLowerCase();
+//   }
+// }
+// if (upper.length === lower.length) s.toLowerCase();
+
+// console.log(upper, lower);
+
+// console.log(solve("code"));
+// console.log(solve("CODe"));
+
+// var number = function (array) {
+//   const newA = [];
+//   if (array.length === 0) {
+//     return [];
+//   } else {
+//     for (let i = 0; i < array.length; i++) {
+//       newA.push(`${i + 1}: ${array[i]}`);
+//     }
+//   }
+//   return newA;
+// };
+
+// // console.log(number(["a", "b", "c"]));
+
+// function DNAStrand(dna) {
+//   let newA = "";
+//   for (let i = 0; i < dna.length; i++) {
+//     if (dna[i] === "A") {
+//       newA += "T";
+//     }
+//     if (dna[i] === "T") {
+//       newA += "A";
+//     }
+//     if (dna[i] === "G") {
+//       newA += "C";
+//     }
+//     if (dna[i] === "C") {
+//       newA += "G";
+//       console.log(newA);
+//     }
+//   }
+//   return newA;
+// }
+// if (dna[i] === "T") newA.push(dna[i]);
+// console.log(newA);
+// if (dna[i] === "C") dna[i] = "G";
+// if (dna[i] === "G") dna[i] = "C";
+
+// let a = splited.filter((a) => a === "A");
+// let t = splited.filter((a) => a === "T");
+// let c = splited.filter((a) => a === "C");
+// const g = splited.filter((a) => a === "G");
+
+// console.log(new1.push(a));
+// const t = splited.find((a) => a === "T").replaceAll("T", "A");
+// const a = splited.find((a) => a === "T").replaceAll("A", "T");
+// console.log(t);
+// const c = splited.find((a) => a === "C").replaceAll("G", "C");
+// const g = splited.find((a) => a === "G").replaceAll("C", "G");
+// new1.push(a);
+// new1.push(t);
+// new1.push(c);
+// new1.push(g);
+
+//
+
+// function take(arr, n) {
+//   return arr.slice(0, n);
+// }
+
+// console.log(take([0, 1, 2, 3, 5, 8, 13], 3));
