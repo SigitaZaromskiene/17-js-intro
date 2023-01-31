@@ -1352,3 +1352,67 @@ function sumStr(a, b) {
 // }
 
 // console.log(take([0, 1, 2, 3, 5, 8, 13], 3));
+
+// function longest(s1, s2) {
+//   let new1 = [];
+//   const sorted1 = s1.split("").sort();
+//   const sorted2 = s2.split("").sort();
+//   const two = sorted1 + sorted2;
+//   const rep = two.replaceAll(",", "");
+
+//   for (let i = 0; i < rep.length; i++) {
+//     if (!new1.includes(rep[i])) {
+//       new1.push(rep[i]);
+//     }
+//   }
+//   return new1.sort().join("");
+// }
+
+// console.log(longest("aretheyhere", "yestheyarehere"));
+
+// function comp(array1, array2) {
+//   if (array1 == null || array2 == null) return false;
+//   array1.sort((a, b) => a - b);
+//   array2.sort((a, b) => a - b);
+//   return array1.map((v) => v * v).every((v, i) => v == array2[i]);
+// }
+// console.log(
+//   comp(
+//     [121, 144, 19, 161, 19, 144, 19, 11],
+//     [231, 14641, 20736, 361, 25921, 361, 20736, 361]
+//   )
+// );
+// function stringClean(s) {
+//   const a = s.replace(/\d+/g, "");
+//   return a;
+// }
+
+// console.log(stringClean("(E3at m2e2!!)"));
+
+// function arithmetic(a, b, operator) {
+//   if ((operator = "add")) {
+//     return a + b;
+//   }
+//   if ((operator = "subtract")) {
+//     console.log(typeof a);
+//   }
+//   if ((operator = "multiply")) {
+//     return a * b;
+//   }
+//   if ((operator = "divide")) {
+//     return a / b;
+//   }
+// }
+
+// console.log(arithmetic(8, 2, "subtract"));
+
+// function xor(a, b) {
+// if (a=== true && b === true){
+//   return true
+// }
+// if (a=== true && b === false){
+//   return true
+// }
+// if (a=== false && b === true){
+//   return true
+// }
