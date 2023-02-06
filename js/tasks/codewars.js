@@ -1416,3 +1416,134 @@ function sumStr(a, b) {
 // if (a=== false && b === true){
 //   return true
 // }
+
+// function gooseFilter(birds) {
+//   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+//   return birds.filter((word) => !geese.includes(word));
+// }
+
+// console.log(
+//   gooseFilter([
+//     "Mallard",
+//     "Hook Bill",
+//     "African",
+//     "Crested",
+//     "Pilgrim",
+//     "Toulouse",
+//     "Blue Swedish",
+//   ])
+// );
+
+// function getEvenNumbers(numbersArray) {
+//   return numbersArray.filter((num) => num % 2 === 0);
+// }
+
+// function addBinary(a, b) {
+//   return a + b.toString(2);
+// }
+
+// function strCount(str, letter) {
+//   let newArr = [];
+//   const splited = str.split("");
+//   newArr.push(splited.filter((a) => a === letter));
+//   console.log(newArr);
+//   return newArr.flat().length;
+// }
+
+// console.log(strCount("Hello", "o"));
+// console.log(strCount("Hello", "l"));
+
+// function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+//   const current = new Date(currentDate).getTime();
+//   const expiration = new Date(expirationDate).getTime();
+//   console.log(current < expiration);
+//   if (enteredCode === correctCode && current < expiration) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(checkCoupon("123", "123", "September 5, 2014", "October 1, 2014"));
+
+// function past(h, m, s) {
+//   const min = h / m;
+//   const sec = min / s;
+
+//   return sec * 1000;
+// }
+
+// console.log(past(0, 1, 1));
+
+// function past(h, m, s) {
+//   var hours = h * 60 * 60 * 1000;
+//   var minutes = m * 60 * 1000;
+//   var seconds = s * 1000;
+
+//   return hours + minutes + seconds;
+// }
+
+// function pipeFix(numbers) {
+//   const max = Math.max(...numbers);
+//   const min = Math.min(...numbers);
+//   console.log(max, min);
+
+//   const newArr = [];
+//   for (let i = min; i < max + 1; i++) {
+//     newArr.push(i);
+//   }
+
+//   return newArr;
+// }
+// console.log(pipeFix([1, 2, 3, 5, 6, 8, 9]));
+
+// function nameShuffler(str) {
+//   return str.split(" ").reverse().join(" ");
+// }
+
+// console.log(nameShuffler("john McClane"));
+
+// function solve(s) {
+//   if (s.length % 2 !== 0) {
+//     return -1;
+//   } else {
+//     for (let i = 0; i < s.length; i++) {
+//       s[i] % 2 === 0 ? s[i] === "(" : s[i] === ")";
+//       console.log(s);
+//     }
+//   }
+// }
+
+// console.log(solve(")()("));
+// console.log(solve("((("));
+
+const isSortedAndHow = (array) => {
+  //   const s = a.join``;
+  //   return s === a.sort((x, y) => x - y).join``
+  //     ? "yes, ascending"
+  //     : s === a.sort((x, y) => y - x).join``
+  //     ? "yes, descending"
+  //     : "no";
+  // };
+
+  const newA = array.slice();
+  const newA1 = array.slice();
+  const asc = newA.sort((a, b) => b - a).join("");
+  const dec = newA1.sort((a, b) => a - b).join("");
+
+  console.log(newA, newA1);
+  console.log(asc, dec);
+  console.log(array);
+
+  if (array !== newA && array !== newA1) {
+    return "no";
+  } else if (array.join("") === dec) {
+    return "yes, descending";
+  } else if (array.join("") === asc) {
+    return "yes, ascending";
+  }
+};
+
+console.log(isSortedAndHow([15, 7, 3, -8]));
+
+console.log(isSortedAndHow([4, 2, 30]));
